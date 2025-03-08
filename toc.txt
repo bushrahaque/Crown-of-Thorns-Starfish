@@ -1,0 +1,30 @@
+STA2453/cots/
+|── toc.txt
+│── data_processing/
+|   ├── format_annotations.py           # Converts annotations to YOLO-digestable format
+│   ├── split_train_test.py             # Splits data into train/test sets
+│   ├── image_tuning.py                 # Preprocesses images for YOLO
+│
+│── model/
+│   ├── pipeline.py                     # Main script for model training/inference
+│   ├── binary_classifier.py            # CNN or XGBoost model for binary classification
+│   ├── yolo_model.py                   # YOLO model for object detection
+│   ├── ensemble.py                     # Combines both models
+│   ├── performance.py                  # Evaluates models and logs metrics
+│   ├── tuning.py                       # Hyperparameter tuning for both models
+│
+│── outputs/                            # Stores predictions and evaluation results
+│   ├── binary_preds.txt
+│   ├── yolo_preds.txt
+│   ├── model_performance.txt
+
+STA2453/tensorflow-great-barrier-reef
+|── train.csv
+│── train_images/
+│   ├── formatted_labels_0/  
+│   ├── formatted_labels_1/
+│   ├── formatted_labels_2/
+│   ├── video_0/
+│   ├── video_1/
+│   ├── video_2/
+

@@ -25,5 +25,4 @@ They key directories to be aware of:
 ## Sample Image
 Below is an example of a COTS from an image in the dataset, where a red bounding box highlights the starfish:
 
-![Underwater Image of COTS with Bounding Box](cots/proposal/images/bounded_image.jpg)
-
+![Underwater Image of COTS with Bounding Box](proposal/images/bounded_image.jpg)

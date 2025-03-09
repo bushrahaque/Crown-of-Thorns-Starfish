@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, Dataset
 import cv2
 import numpy as np
 from tqdm import tqdm
-from performance_metrics import evaluate_model
+from performance_metrics import evaluate_classifier
 
 # Paths
 TRAIN_CSV = "/Users/bushra/Documents/STA2453/tensorflow-great-barrier-reef/train_split.csv"
@@ -97,7 +97,7 @@ def train_cots_classifier(num_epochs=1, batch_size=16, learning_rate=0.001):
     print(f"Model saved to {OUTPUT_MODEL_PATH}")
 
     # Evaluate model on test and save results
-    metrics = evaluate_model(model, test_loader, device)
+    metrics = evaluate_classifier(model, test_loader, device)
 
     with open(PERFORMANCE_OUTPUT_PATH, "w") as f:
         for key, value in metrics.items():
